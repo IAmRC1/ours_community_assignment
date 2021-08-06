@@ -331,17 +331,17 @@ ul li {
   color: #fff;
   position: absolute;
   top: -25%;
-  right: 45%;
+  right: 46%;
 }
 
 @media screen and (min-width: 576px) {
   .event_tickets {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
   }
   .event_tickets .event_card .join_session_block .session_count {
     top: -50%;
-    right: 16%;
+    right: 29%;
   }
 }
 @media screen and (min-width: 767px) {
@@ -349,8 +349,27 @@ ul li {
     width: 75%;
   }
   .event_tickets .event_card .join_session_block .session_count {
-    top: -50%;
     right: 22%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .event_tickets .event_card .join_session_block .session_count {
+    right: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .event_tickets .event_card .join_session_block .session_count {
+    right: 14%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .event_tickets .event_card .join_session_block .session_count {
+    right: 11%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .event_tickets .event_card .join_session_block .session_count {
+    right: 6%;
   }
 }
 
