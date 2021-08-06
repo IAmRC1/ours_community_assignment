@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$color_gray_1: #9f9f9f;
+$color_gray_2: #6f6f6f;
+$color_gray_3: #cecece;
+$color_gray_4: #7d7d7d;
+$color_gray_5: #757575;
+$color_gray_6: #9d9c9c;
+
+$color_dark_1: #2d2d2d;
+$color_dark_2: #1f1f1f;
+
+$color_light: #fff;
+$color_light_1: #f1f1f1;
+$color_light_2: #e5e5e5;
+$color_light_3: #f3f3f3;
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style-type: none;
+  }
+}
+
+.fs_10{
+  font-size: 10px;
+}
+.fs_12{
+  font-size: 12px;
+}
+.fs_16{
+  font-size: 16px;
+}
+.fs_18{
+  font-size: 18px;
+}
+.fs_20{
+  font-size: 20px;
+}
+.fs_32{
+  font-size: 32px;
+}
+
+.fw_300{
+  font-weight: 300;
+}
+.fw_400{
+  font-weight: 400;
+}
+.fw_500{
+  font-weight: 500;
+}
+.fw_600{
+  font-weight: 600;
+}
+
+.text_gray_1{
+  color: $color_gray_1;
+}
+
+.text_gray_2{
+  color: $color_gray_2;
+}
+
+.text_gray_3{
+  color: $color_gray_3;
+}
+
+.text_dark_1{
+  color: $color_dark_1;
+}
+.bg_dark_1{
+  background-color: $color_dark_1;
+}
+
+.text_white{
+  color: $color_light;
+}
+
+.bg_light_2{
+  background-color: $color_light_2;
+}
+
+.header{
+  .auth_btn_block{
+    .custom_btn{
+      background-color: $color_dark_1;
+      color: $color_light_1;
+      padding: 12px 20px;
+      border-radius: 15px;
+      &:hover{
+        color: rgba($color_light_1, 0.7);
+      }
+    }
+  }
+  @media screen and (min-width: 576px){
+    .auth_btn_block{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.hero{
+  padding: 50px 0;
+  .custom_btn{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px){
+  .hero{
+    padding: 250px 0;
+    .custom_btn{
+      background-color: $color_dark_1;
+      color: $color_light_1;
+      padding: 12px 20px;
+      border-radius: 15px;
+      &:hover{
+        color: rgba($color_light_1, 0.7);
+      }
+    }
+  }
+}
+
+.description{
+  padding: 40px 0;
+  border-radius: 20px;
+}
+@media screen and (min-width: 576px){
+  .description{
+    padding: 80px 0;
+  }
+}
+
+.category_blocks{
+  padding: 40px 30px 30px;
+  .category_block{
+    height: auto;
+    border-radius: 20px;
+    padding: 48px 32px;
+    color: $color_light;
+    margin: 0 0 21px;
+    .category_block_title{
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (min-width: 576px){
+  .category_blocks{
+    padding: 60px 45px 45px;
+    .category_block{
+      height: auto;
+      .category_block_title{
+        margin: 80px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px){
+  .category_blocks{
+    .category_block{
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .category_blocks{
+    .category_block{
+      height: 475px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .category_blocks{
+    .category_block{
+      height: 400px;
+    }
+  }
+}
+
+.manifesto{
+  padding: 40px 0;
+  margin: 0 0 40px;
+  border-radius: 20px;
+  ul{
+    margin: 0 0 50px 0;
+    li{
+      margin: 0;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+  .btn_login{
+    color: $color_light;
+    border: 1.5px solid $color_gray_4;
+    border-radius: 15px;
+    width: 192px;
+    padding: 12px 20px;
+    &:hover{
+      color: $color_gray_1;
+    }
+  }
+  .btn_join_wl{
+    color: $color_dark_2;
+    background-color: $color_light_1;
+    width: 192px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    &:hover{
+      color: $color_gray_5;
+    }
+  }
+}
+
+@media screen and (min-width: 576px){
+  .manifesto{
+    padding: 80px 0;
+    margin: 0 0 80px;
+    ul{
+      margin: 0 0 50px 0;
+      li{
+        margin: 0;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+    .btn_login{
+      color: $color_light;
+      border: 1.5px solid $color_gray_4;
+      border-radius: 15px;
+      width: 192px;
+      padding: 12px 20px;
+      &:hover{
+        color: $color_gray_1;
+      }
+    }
+    .btn_join_wl{
+      color: $color_dark_2;
+      background-color: $color_light_1;
+      width: 192px;
+      padding: 12px 20px;
+      border-radius: 15px;
+      &:hover{
+        color: $color_gray_5;
+      }
+    }
+  }
+}
+
+.footer{
+  padding: 21px 32px;
+  border-top: 1px solid $color_gray_1;
+  .social-icons{
+    ul{
+      li{
+        margin: 0 12px 0 0;
+        &:last-child{
+          margin: 0;
+        }
+        a{
+          color: inherit;
+          &:hover{
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  .links{
+    ul{
+      li{
+        margin: 0 12px 0 0;
+        &:last-child{
+          margin: 0;
+        }
+        a{
+          color: $color_gray_5;
+          &:hover{
+            color: $color_dark_1;
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    color: $color_gray_5;
+  }
+}
+
+.event_tickets{
+  margin: 30px 0;
+  padding: 25px;
+  .event_card{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    margin: 0 0 16px 0;
+    &:last-child{
+      margin: 0;
+    }
+    .event_time{
+      background: rgba(255, 255, 255, 0.33);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 30px;
+      padding: 5px 14px;
+    }
+    .join_session_block{
+      margin: 20px 0 0;
+      position: relative;
+      a{
+        color: inherit;
+        text-decoration: none;
+        color: $color_light;
+        &:hover{
+          color: $color_dark_2;
+        }
+      }
+      .join_session_btn{
+        background-color: $color_light_3;
+        color: $color_gray_6;
+        border-radius: 15px;
+        padding: 12px 68px;
+        width: 250px;
+        &:hover{
+          color: $color_gray_2; 
+        }
+      }
+      .start_session_btn{
+        background-color: $color_dark_2;
+        border-radius: 15px;
+        padding: 12px 68px;
+        width: 250px;
+        &:hover{
+          color: $color_gray_2; 
+        }
+      }
+      .session_count{
+        color: $color_light;
+        position: absolute;
+        top: -25%;
+        right: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .event_tickets{
+    width: 50%;
+    margin: 0 auto;
+    .event_card{
+      .join_session_block{
+        .session_count{
+          top: -50%;
+          right: 16%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .event_tickets{
+    width: 75%;
+    .event_card{
+      .join_session_block{
+        .session_count{
+          top: -50%;
+          right: 22%;
+        }
+      }
+    }
+  }
+}
